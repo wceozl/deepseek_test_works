@@ -1,0 +1,21 @@
+name = "glyphscript-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# 使用Workers模式
+workers_dev = true
+
+# 添加正确格式的 nodejs_compat 兼容性标志
+compatibility_flags = ["nodejs_compat"]
+
+# 自定义域名设置（在配置后取消注释）
+# routes = [
+#   { pattern = "api.glyphscript.site/*", zone_name = "glyphscript.site" }
+# ]
+
+# 环境变量(开发环境)
+[vars]
+DEEPSEEK_API_KEY = "sk-00a792065118472093796718f789d057"
+
+# 生产环境设置
+[env.production]
